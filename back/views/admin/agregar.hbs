@@ -1,0 +1,21 @@
+<div class="agregarnovedad">
+<h2>Agregar una nueva novedad</h2>
+<form class="centrado" action="/admin/novedades/agregar" method="post" enctype="multipart/form-data">
+    <div class="titulo">
+         <input type="text" id="inputUser" placeholder="Titulo" name="titulo">
+         </div>
+    <div class="fecha">
+        <input type="date" name="fecha">
+    </div>
+    <div class="cuerpo">
+         <textarea type="text" id="inputUser" placeholder="Cuerpo" name="cuerpo"></textarea>
+         </div>
+        <div class="imagen">
+          <label>Imagen:<input type="file" class="form-control" name="imagen" id="imagen"/></label>
+        </div> 
+    <button class="guardar" type="submit">Guardar</button>
+  </form>
+  {{#if error}}
+    <h5>{{message}}</h5>
+  {{/if}}  
+  </div>

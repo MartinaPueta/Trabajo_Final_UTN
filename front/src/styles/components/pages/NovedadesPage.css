@@ -1,0 +1,43 @@
+.fondo-novedades {
+    background-image: url(../../../../public/images/novedadeees.jpg);
+    background-size: cover;
+    width: auto;
+    padding-top: 50px;
+}
+
+.fondo-novedades .header {
+    width: 100%;
+    height: 200px;
+}
+
+.novedades {
+    padding: 20px 20px 5px 20px;
+    background-color: burlywood;
+}
+
+.noticia {
+    border: 1px solid black;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: rgb(245, 221, 191);
+}
+
+.noticia h3 {
+    color: grey;
+}
+
+.noticia p {
+    font-weight: 300;
+}
+
+.centrarimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.imgnovedades {
+    filter: none;
+    padding: 10px;
+}

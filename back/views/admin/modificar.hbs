@@ -1,0 +1,30 @@
+<div class="agregarnovedad">
+<h2>Modificar la novedad</h2>
+<form class="centrado" action="/admin/novedades/modificar" method="post" enctype = "multipart/form-data">
+   <input type="hidden" value="{{novedad.id}}" name="id">
+    <div class="titulo">
+         <input type="text" class="form_control" id="inputUser" placeholder="Titulo" name="titulo" value="{{novedad.titulo}}">
+         </div>
+    <div class="fecha">
+        <input type="date" class="form_control" name="fecha" value="{{novedad.fecha}}">
+    </div>
+    <div class="cuerpo">
+         <textarea type="text" class="form_control" id="inputUser" placeholder="Cuerpo" name="cuerpo" >{{novedad.cuerpo}}</textarea>
+         </div>
+
+         <div class="imagen">
+          <p>
+               <label>Imagen: (Opcional) <input type="file" class="form_control" name="imagen" id="imagen"/></label>
+          </p>
+          <p>
+               <label><input type="checkbox" name="img_delete" id="img_delete" value="1">Eliminar imagen actual?</label>
+               <input type="hidden" name="img_original" value="{{novedad.img_id}}">
+          </p>
+         </div>
+
+    <button class="guardar" type="submit">Modificar</button>
+  </form>
+  {{#if error}}
+    <h5>{{message}}</h5>
+  {{/if}}  
+  </div>

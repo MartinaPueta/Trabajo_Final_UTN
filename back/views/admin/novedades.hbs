@@ -1,0 +1,39 @@
+<div class="inicionovedades">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <p class="bienvenida">Hola {{ usuario }}</p> <a class="salida" href="/admin/login/logout"> Cerrar
+                    sesión</a>
+            </div>
+        </div>
+        <div class="novedades">
+            <h3> Listado de Novedades</h3>
+        </div>
+        <div class="nueva">
+            <a class="nuevo" href="/admin/novedades/agregar">+ Nuevo</a>
+        </div>
+    </div>
+    <div class="tablas">
+        <table>
+            <thead>
+                <tr class="fila">
+                    <th class="iniciotabla">#</th>
+                    <th>Titulo</th>
+                    <th>Imagen</th>
+                    <th class="fintabla">Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each novedades}}
+                <tr>
+                    <th class="iniciotabla">{{id}}</th>
+                    <td>{{titulo}}</td>
+                    <td>{{{imagen}}}</td>
+                    <td class="fintabla"><a href="/admin/novedades/modificar/{{id}}">Editar</a><a
+                            href="/admin/novedades/eliminar/{{id}}">Eliminar</a></td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
+</div>

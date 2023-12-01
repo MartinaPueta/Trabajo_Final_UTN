@@ -1,0 +1,277 @@
+/* Css de Inicio */
+body {
+    font-family: 'Oswald', sans-serif;
+}
+
+.fondo-inicio {
+    background-image: url(../images/inicioo.jpg);
+    background-size: cover;
+    width: auto;
+}
+header {
+    width: 100%;
+    height: 500px;
+}
+
+header img {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    filter: drop-shadow(5px 2px 2px black );
+    
+}
+.inicio {
+    font-weight: 600;
+    text-align: center;
+   font-size: 30px;
+   letter-spacing: 5px;
+   color: white;
+   margin-top: 100px;
+   filter: drop-shadow(5px 2px 2px black );
+   
+}
+/* Iniciar sesion */
+
+.contenedor {
+    background-color: burlywood;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.contenedor h2 {
+    color:rgb(150, 48, 48);
+    margin: 2px;
+}
+
+.formulario {
+    margin:50px;
+}
+
+.formulario input {
+    width: 300px;
+    height: 30px;
+    background-color: blanchedalmond;
+    border-radius: 10px;
+}
+
+.ingresar {
+    display: block;
+    margin: auto;
+    height: 30px;
+    background-color: rgb(226, 141, 29);
+    box-shadow: 0 0 10px rgb(80, 80, 80);
+    border-radius: 5px;
+}
+
+p {
+    color: rgb(223, 36, 73);
+}
+
+/* Ingreso de sesion */
+
+.inicionovedades {
+    background-color: rgb(245, 204, 144);
+    height: 100%;
+}
+
+.bienvenida {
+   color: rgb(224, 148, 48);
+   font-size: 40px;
+   margin: 0px;
+   padding: 15px;
+}
+
+.salida {
+    color: red;
+    background-color: rgb(255, 155, 155);
+    display: flex;
+    position: absolute;
+    left: 92%;
+    top: 55%;
+    border: solid 2px rgb(150, 29, 29);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.salida:hover {
+    background-color: red;
+    color: white;
+}
+.novedades {
+    margin: 20px;
+}
+
+.nuevo {
+    text-decoration: none;
+    font-size: 20px;
+    background-color: rgb(122, 209, 71);
+    color: white;
+    display: flex;
+    position: absolute;
+    left: 10%;
+    top: 61%;
+    border: solid 2px rgb(77, 150, 29);
+    border-radius: 10px;
+    padding: 3px;
+}
+
+.nuevo:hover {
+    background-color: rgb(94, 255, 0);
+    color: black;
+}
+.tablas {
+   display: flex;
+   justify-content: center;
+}
+
+table {
+    border: solid 3px grey;
+    height: 100%;
+    width: 90%;
+    table-layout: auto;
+    border-collapse: collapse;
+    border-spacing: 5px;
+    text-align: left;
+    margin-bottom: 3vh;
+}
+
+thead tr {
+    color: white;
+    background-color: rgb(68, 67, 67);    
+}
+
+td,
+th {
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px;
+}
+
+tbody {
+    background-color: burlywood;
+}
+
+.iniciotabla {
+    text-align: center;
+    width: 5%;
+}
+
+.fintabla {
+    text-align: center;
+    width: 10%;
+}
+
+tbody tr td a {
+    margin: 5px;
+    padding: 2px;
+    border: 1px black solid;
+    border-radius: 5px;
+    background-color: rgb(23, 143, 223);
+    color: white;
+    text-decoration: none;
+}
+
+tbody tr td a:hover {
+    background-color: blue;
+    border-radius: 10px;
+}
+
+/* Nueva novedad */
+
+.agregarnovedad h2 {
+    color:rgb(150, 48, 48);
+}
+
+.agregarnovedad {
+  background-color: rgb(245, 204, 144);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.centrado {
+    border: double 8px rgb(121, 66, 22);
+    background-color: burlywood;
+    padding: 10px;
+    margin: 5px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.titulo input {
+    width: 800px;
+    height: 40px;
+    background-color: rgb(255, 225, 180);
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgb(80, 80, 80)
+}
+
+.fecha input {
+    width: 300px;
+    height: 30px;
+    margin-top:10px;
+    margin-left: 250px;
+    background-color: rgb(255, 225, 180);
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgb(80, 80, 80)
+}
+
+.cuerpo textarea {
+    width: 800px;
+    height: 500px;
+    margin-top: 10px;
+    background-color: rgb(255, 225, 180);
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgb(80, 80, 80)
+}
+
+.imagen {
+    padding: 15px;
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.guardar {
+    background: rgb(218, 167, 167);
+    color: white;
+    font-size: 16px;
+    padding: 6px 20px;
+    display: inline-block;
+    width: 150px;
+    margin-left: 325px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.guardar:hover {
+    background-color:rgb(241, 73, 73);
+}
+
+.imagen p {
+    color: #333;
+}
+
+/* Footer */
+
+footer {
+    background-color: #ccc;
+    clear: both;
+    color: #333;
+    text-align: center;
+    padding: 5px ;
+}
+
+footer p {
+    color: black;
+}
